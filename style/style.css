@@ -1,0 +1,1689 @@
+@font-face {
+  font-family: Alegreya;
+  src: url("../fonts/Alegreya-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Fondamento;
+  src: url("../fonts/Fondamento-Regular.ttf");
+}
+@font-face {
+  font-family: "Quintessential";
+  src: url("../fonts/Quintessential-Regular.ttf");
+}
+@font-face {
+  font-family: kotayk;
+  src: url("../fonts/Kotayk-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main header {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2EAEA;
+  position: fixed;
+  top: 0%;
+  z-index: 9999;
+}
+main header .logoBox {
+  width: 80px;
+  height: 22px;
+}
+main header .logoBox a {
+  text-decoration: none;
+  font-family: Alegreya;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 21.78px;
+  color: #BC5832;
+}
+main header #menuIcon {
+  display: none;
+}
+main header .navMenu {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main header .navMenu ul {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  position: relative;
+  top: 10px;
+}
+main header .navMenu ul li {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+  transition: 0.3s ease;
+}
+main header .navMenu ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+main header .navMenu ul li .active {
+  font-weight: 600;
+  box-shadow: 0px 23px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 0.3s ease;
+}
+main header .navMenu ul li:hover {
+  font-weight: 600;
+  box-shadow: 0px 23px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 0.3s ease;
+}
+main header .searchBox {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+main header .searchBox .serarchBoxInsideBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+main header .searchBox .serarchBoxInsideBox #userIcon {
+  position: relative;
+  left: -10px;
+}
+main header .searchBox .material-symbols-outlined {
+  cursor: pointer;
+}
+main header .searchBox .search-container {
+  position: relative;
+  width: 200px;
+}
+main header .searchBox #search-input {
+  width: 172px;
+  height: 24px;
+  display: none;
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 1080px) {
+  main header .navMenu {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 990px) {
+  main header .navMenu {
+    width: 400px;
+  }
+  main header .navMenu ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 880px) {
+  main header .navMenu {
+    display: none;
+  }
+  main header .searchBox #search-input {
+    width: 100px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main header .logoBox {
+    width: 120px;
+    position: relative;
+    left: 0px;
+  }
+  main header .logoBox a {
+    font-size: 26px;
+  }
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  main header #userIcon {
+    position: relative;
+    left: 140px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -300px;
+    cursor: pointer;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 100px;
+  }
+  main header #userIcon {
+    position: relative;
+    left: 90px;
+  }
+  main header .navMenu {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 74px;
+    left: 0px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  main header .navMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 0px;
+    top: 40px;
+  }
+}
+@media screen and (max-width: 620px) {
+  main header .navMenu ul {
+    width: 70%;
+    position: relative;
+    left: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -220px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 70px;
+  }
+  main header .logoBox {
+    width: 120px;
+    position: relative;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -220px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 50px;
+  }
+  main header .logoBox {
+    width: 100px;
+    position: relative;
+    left: -10px;
+  }
+  main header .logoBox a {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 475px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -170px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 80px;
+  }
+  main header .logoBox {
+    width: 100px;
+    position: relative;
+    left: 40px;
+  }
+  main header .logoBox a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 410px) {
+  main header .searchBox {
+    position: relative;
+    left: 50px;
+  }
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -140px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main header .logoBox {
+    position: relative;
+    left: 40px;
+  }
+}
+main .popup {
+  width: 1207px;
+  min-height: 305px;
+  max-height: 700px;
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(242, 234, 234);
+  padding: 0px;
+  z-index: 1000;
+}
+main .popup span {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  color: rgb(171, 57, 33);
+  font-family: Alegreya;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 74.86px;
+}
+main .popup p {
+  width: 424px;
+  height: 74px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.57px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+main .popup .closeIcon {
+  position: relative;
+  left: 610px;
+  top: -300px;
+  cursor: pointer;
+  z-index: 99999;
+}
+main .popup form {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 600px;
+  top: -500px;
+  gap: 20px;
+}
+main .popup form input {
+  width: 518px;
+  height: 80px;
+  border-radius: 18px;
+  background: rgb(254, 251, 251);
+  border: none;
+  outline: none;
+  padding-left: 200px;
+}
+main .popup form ::-moz-placeholder {
+  color: rgb(242, 234, 234);
+  font-weight: 600;
+  line-height: 30.48px;
+  font-size: 25px;
+  font-family: Montserrat;
+}
+main .popup form ::placeholder {
+  color: rgb(242, 234, 234);
+  font-weight: 600;
+  line-height: 30.48px;
+  font-size: 25px;
+  font-family: Montserrat;
+}
+main .popup form button {
+  width: 518px;
+  height: 80px;
+  border-radius: 18px;
+  background: rgb(134, 115, 115);
+  color: rgb(255, 255, 255);
+  line-height: 30.48px;
+  font-size: 25px;
+  font-family: Montserrat;
+  font-weight: 700;
+  border: none;
+}
+main .popup form img {
+  position: relative;
+  top: 75px;
+  left: -150px;
+}
+@media screen and (max-width: 1230px) {
+  main .popup {
+    width: 900px;
+    height: 550px;
+    top: 60%;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 350px;
+    top: -280px;
+  }
+  main .popup form .mailIcon {
+    position: relative;
+    top: 75px;
+    left: -110px;
+    z-index: 9;
+  }
+  main .popup p {
+    font-size: 26px;
+  }
+  main .popup form {
+    position: relative;
+    left: 430px;
+    top: -600px;
+  }
+  main .popup form input {
+    width: 300px;
+    padding-left: 80px;
+  }
+  main .popup form button {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 910px) {
+  main .popup {
+    width: 700px;
+    height: 500px;
+  }
+  main .popup .leftImg {
+    height: 500px;
+  }
+  main .popup form {
+    position: relative;
+    left: 275px;
+    top: -450px;
+  }
+  main .popup p {
+    width: 300px;
+    font-size: 22px;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 300px;
+    top: -220px;
+  }
+}
+@media screen and (max-width: 705px) {
+  main .popup .leftImg {
+    display: none;
+  }
+  main .popup {
+    width: 500px;
+    display: none;
+    background-image: url("../images/Main Page Images/unsplash_y7PrYOwjItQ.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 460px;
+    top: 10px;
+    cursor: pointer;
+  }
+  main .popup form {
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 8px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(165, 157, 157, 0.472);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  main .popup form::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+  }
+  main .popup form span,
+  main .popup form p,
+  main .popup form img,
+  main .popup form input[type=email],
+  main .popup form button {
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+  }
+  main .popup form input[type=email] {
+    width: 300px;
+    padding-left: 80px;
+    box-sizing: border-box;
+  }
+  main .popup form button {
+    width: 300px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .popup {
+    width: 350px;
+    height: 500px;
+  }
+  main .popup form {
+    width: 300px;
+    position: relative;
+    top: 250px;
+  }
+  main .popup form::before {
+    height: 320px;
+  }
+  main .popup form input[type=email] {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 0px;
+    padding-left: 40px;
+  }
+  main .popup form input::-moz-placeholder {
+    font-size: 18px;
+  }
+  main .popup form input::placeholder {
+    font-size: 18px;
+  }
+  main .popup form button {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    font-size: 16px;
+  }
+  main .popup form .mailIcon {
+    width: 20px;
+    position: relative;
+    top: 44px;
+    left: -80px;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 300px;
+    top: 10px;
+    z-index: 99999;
+  }
+}
+main .recipesPage {
+  width: 100%;
+  min-height: 1300px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  position: relative;
+  top: 100px;
+}
+main .recipesPage .leftBox {
+  width: 890px;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+main .recipesPage .leftBox .visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
+}
+main .recipesPage .leftBox h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+main .recipesPage .leftBox .container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2em;
+  display: none;
+}
+main .recipesPage .leftBox .card-carousel {
+  --card-width: 80%;
+  --card-height: 400px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  transition: filter 0.3s ease;
+}
+main .recipesPage .leftBox .card-carousel.smooth-return {
+  transition: all 0.2s ease;
+}
+main .recipesPage .leftBox .card-carousel .card {
+  background: whitesmoke;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 1em;
+  min-width: 500px;
+  height: 350px;
+  position: absolute;
+  margin: 0px auto;
+  color: rgba(0, 0, 0, 0.5);
+  transition: inherit;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 55px;
+  filter: brightness(0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .recipesPage .leftBox .card.highlight {
+  filter: brightness(1);
+}
+main .recipesPage .leftBox .lunch {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2EAEA;
+  position: relative;
+  top: 220px;
+  left: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .recipesPage .leftBox .lunch span {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17.07px;
+  color: #000000;
+}
+main .recipesPage .leftBox .card:nth-of-type(1) .image-container {
+  width: 500px;
+  height: 300px;
+  background-image: url("../images/Main Page Images/typesBoxImg1.png");
+  position: relative;
+  top: -50px;
+}
+main .recipesPage .leftBox .card:nth-of-type(2) .image-container {
+  width: 500px;
+  height: 300px;
+  background-image: url("../images/Main Page Images/typesBoxImg2.png");
+  position: relative;
+  top: -50px;
+}
+main .recipesPage .leftBox .card:nth-of-type(3) .image-container {
+  width: 500px;
+  height: 300px;
+  background-image: url("../images/Main Page Images/typesBoxImg3.png");
+  position: relative;
+  top: -50px;
+}
+main .recipesPage .leftBox .image-container {
+  width: 8em;
+  height: 8em;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+main .recipesPage .leftBox .image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border-radius: 30px;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+main .recipesPage .leftBox h2 {
+  padding: 1em;
+  margin-top: 1em;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  border-radius: 0.2em;
+  display: inline-block;
+  transform: translateX(calc((100vw - 100%) / 2));
+}
+main .recipesPage .leftBox h2 a {
+  color: #f5b916;
+}
+main .recipesPage .leftBox .foodBoxA {
+  width: 888px;
+  height: 300px;
+  background-image: url("../images/Main Page Images/leftBoxIMg Main page.png");
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+main .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+  width: 345px;
+  height: 67px;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24.38px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 450px;
+  top: 40px;
+}
+main .recipesPage .leftBox .foodBoxA .userNameBox {
+  width: 250px;
+  height: 80px;
+  position: relative;
+  left: 400px;
+  top: -200px;
+}
+main .recipesPage .leftBox .foodBoxA .userNameBox .courtneyHenry {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: Montserrat;
+  position: relative;
+  left: 250px;
+}
+main .recipesPage .leftBox .foodBoxA .userNameBox .dateFoot {
+  position: relative;
+  top: 250px;
+  left: 175px;
+}
+main .recipesPage .leftBox .foodBoxA .userNameBox img {
+  position: relative;
+  top: 233px;
+  left: 200px;
+}
+main .recipesPage .leftBox .foodBoxA .quisAutem {
+  width: 406px;
+  height: 120px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 50px;
+  left: 450px;
+}
+main .recipesPage .leftBox .foodBoxA .courtneyHenry {
+  position: relative;
+  left: 200px;
+  top: 220px;
+}
+main .recipesPage .leftBox .carousel {
+  width: 890px;
+  height: 528px;
+}
+main .recipesPage .leftBox .carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+main .recipesPage .leftBox .carousel .textBoxCarusel {
+  width: 405px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 250px;
+  top: -400px;
+  gap: 20px;
+}
+main .recipesPage .leftBox .carousel .textBoxCarusel .material-symbols-outlined {
+  position: relative;
+  top: -58px;
+  left: 60px;
+}
+main .recipesPage .leftBox .carousel .textBoxCarusel .recipes {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgb(0, 0, 0);
+}
+main .recipesPage .leftBox .carousel .textBoxCarusel .ChoosingNytrient {
+  font-family: Fondamento;
+  font-size: 30px;
+  line-height: 41.51px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+main .recipesPage .leftBox .carousel .textBoxCarusel .byDietolog {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgb(0, 0, 0);
+}
+main .recipesPage .leftBox .carousel .textBoxCarusel .readMoreBtn {
+  width: 148.89px;
+  height: 54.07px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  border: none;
+}
+main .recipesPage .leftBox .typesOfFoodBox {
+  width: 900px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .recipesPage .leftBox .typesOfFoodBox .oneBoxImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .recipesPage .leftBox .typesOfFoodBox .oneBoxImg .typesFoodProfile {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000000;
+}
+main .recipesPage .leftBox .typesOfFoodBox .oneBoxImg .lunch {
+  width: 100px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFEFE;
+  position: relative;
+  top: 200px;
+  left: -70px;
+  border-radius: 5px;
+}
+main .recipesPage .leftBox .typesOfFoodBox .oneBoxImg .lunch span {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #000000;
+}
+main .recipesPage .leftBox .typesOfFoodBox .twoBoxImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .recipesPage .leftBox .typesOfFoodBox .twoBoxImg .typesFoodProfile {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000000;
+}
+main .recipesPage .leftBox .typesOfFoodBox .twoBoxImg .lunch {
+  width: 81px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFEFE;
+  position: relative;
+  top: 200px;
+  left: -70px;
+  border-radius: 5px;
+}
+main .recipesPage .leftBox .typesOfFoodBox .twoBoxImg .lunch span {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #000000;
+}
+main .recipesPage .leftBox .typesOfFoodBox .threeBoxImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .recipesPage .leftBox .typesOfFoodBox .threeBoxImg .typesFoodProfile {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000000;
+}
+main .recipesPage .leftBox .typesOfFoodBox .threeBoxImg .lunch_ {
+  width: 120px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFEFE;
+  position: relative;
+  top: 200px;
+  left: -60px;
+  border-radius: 5px;
+}
+main .recipesPage .leftBox .typesOfFoodBox .threeBoxImg .lunch_ span {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #000000;
+}
+main .recipesPage .right_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+main .recipesPage .right_box .profileBox {
+  width: 295px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .recipesPage .right_box .profileBox .profileBoxName {
+  width: 138px;
+  height: 30px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 10%;
+  color: #000000;
+  text-align: center;
+}
+main .recipesPage .right_box .profileBox .profileBoxProfession {
+  width: 50px;
+  height: 30px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  color: #766E6E;
+}
+main .recipesPage .right_box .profileBox .profileBoxPresent {
+  width: 223px;
+  height: 66px;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+main .recipesPage .right_box .categoriesBox2 {
+  width: 700px;
+  min-height: 120px;
+  background: #F2EAEA;
+  display: none;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+}
+main .recipesPage .right_box .categoriesBox2 .categoriesBox2 {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .recipesPage .right_box .categoriesBox2 .categoriesBox2 .categoriesText2 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+}
+main .recipesPage .right_box .categoriesBox2 .categoriesBox2 .categoriesContent {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+main .recipesPage .right_box .categoriesBox2 .h1, main .recipesPage .right_box .categoriesBox2 .h2, main .recipesPage .right_box .categoriesBox2 .h3, main .recipesPage .right_box .categoriesBox2 .h4, main .recipesPage .right_box .categoriesBox2 .h5, main .recipesPage .right_box .categoriesBox2 .h6, main .recipesPage .right_box .categoriesBox2 h1, main .recipesPage .right_box .categoriesBox2 h2, main .recipesPage .right_box .categoriesBox2 h3, main .recipesPage .right_box .categoriesBox2 h4, main .recipesPage .right_box .categoriesBox2 h5, main .recipesPage .right_box .categoriesBox2 h6 {
+  display: flex;
+}
+main .recipesPage .right_box .categoriesBox {
+  width: 295px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .recipesPage .right_box .categoriesBox .borderCategoriesBox {
+  width: 295px;
+  height: 7px;
+  background-color: #F2EAEA;
+}
+main .recipesPage .right_box .categoriesBox .categoriesText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main .recipesPage .right_box .categoriesBox span {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+}
+main .recipesPage .right_box .macarellaBox {
+  width: 199px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+main .recipesPage .right_box .macarellaBox .macarellaBtn {
+  width: 105px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -210px;
+  border-radius: 13px;
+  border: none;
+  font-family: Quintessential;
+  font-weight: 400;
+}
+main .recipesPage .right_box .macarellaBox .fellLike {
+  position: relative;
+  top: -140px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(0, 0, 0);
+}
+main .recipesPage .right_box .macarellaBox .borderCategoriesBox {
+  width: 295px;
+  height: 7px;
+  background-color: #F2EAEA;
+}
+main .recipesPage .right_box .tagsBox {
+  width: 295px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .recipesPage .right_box .tagsBox .tagsText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main .recipesPage .right_box .tagsBox .tagsBoxDivs {
+  width: 261px;
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+main .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+  width: 81px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2EAEA;
+  border-radius: 5px;
+}
+main .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox span {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #000000;
+}
+@media screen and (max-width: 1220px) {
+  main .recipesPage .leftBox .carousel .carousel-inner img {
+    width: 700px;
+    height: 400px;
+  }
+  main .recipesPage .leftBox .carousel {
+    width: 700px;
+    height: 400px;
+  }
+  main .recipesPage .leftBox .carousel .textBoxCarusel {
+    position: relative;
+    left: 150px;
+    top: -320px;
+  }
+  main .recipesPage .leftBox {
+    width: 700px;
+  }
+  main .recipesPage .leftBox .foodBoxA {
+    width: 700px;
+  }
+  main .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+    width: 280px;
+    position: relative;
+    left: 400px;
+    font-size: 18px;
+  }
+  main .recipesPage .leftBox .foodBoxA .quisAutem {
+    width: 300px;
+    position: relative;
+    left: 400px;
+    top: 20px;
+    font-size: 12px;
+  }
+  main .recipesPage .leftBox .foodBoxA .userNameBox {
+    position: relative;
+    left: 250px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox {
+    width: 700px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox .oneBoxImg img {
+    width: 200px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox .twoBoxImg img {
+    width: 200px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox .threeBoxImg img {
+    width: 200px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox .twoBoxImg .lunch {
+    position: relative;
+    top: 150px;
+    left: -50px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox .oneBoxImg .lunch {
+    position: relative;
+    top: 150px;
+    left: -30px;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox .threeBoxImg .lunch_ {
+    position: relative;
+    top: 150px;
+    left: -20px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  main .recipesPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+    height: 2600px;
+    position: relative;
+    top: 0;
+  }
+  main .recipesPage .leftBox .container {
+    display: flex;
+  }
+  main .recipesPage .leftBox .typesOfFoodBox {
+    display: none;
+  }
+  main .recipesPage .right_box .profileBox {
+    width: 700px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #F2EAEA;
+  }
+  main .recipesPage .right_box .profileBox img {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    left: 300px;
+  }
+  main .recipesPage .right_box .profileBox .textBoxProfile {
+    position: relative;
+    left: -250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  main .recipesPage .right_box .profileBox .profileBoxName {
+    width: 200px;
+    font-size: 20px;
+  }
+  main .recipesPage .right_box .profileBox .profileBoxProfession {
+    font-size: 16px;
+  }
+  main .recipesPage .right_box .categoriesBox {
+    display: none;
+  }
+  main .recipesPage .right_box .categoriesBox2 {
+    display: flex;
+  }
+  main .recipesPage .right_box .macarellaBox {
+    width: 700px;
+    height: 300px;
+  }
+  main .recipesPage .right_box .macarellaBox img {
+    width: 700px;
+    height: 300px;
+    position: relative;
+    top: 50px;
+  }
+  main .recipesPage .right_box .macarellaBox .macarellaBtn {
+    width: 200px;
+    height: 50px;
+  }
+  main .recipesPage .right_box .tagsBox {
+    width: 500px;
+    height: 300px;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs {
+    width: 500px;
+    height: 350px;
+    background: #F2EAEA;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+    width: 150px;
+    height: 40px;
+    background: white;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 745px) {
+  main .recipesPage .leftBox .carousel .carousel-inner img {
+    width: 500px;
+    height: 400px;
+  }
+  main .recipesPage .leftBox .carousel {
+    width: 500px;
+    height: 400px;
+  }
+  main .recipesPage .leftBox .carousel .textBoxCarusel {
+    position: relative;
+    left: 50px;
+  }
+  main .recipesPage .leftBox .foodBoxA {
+    width: 500px;
+  }
+  main .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+    position: relative;
+    left: 100px;
+  }
+  main .recipesPage .leftBox .foodBoxA .quisAutem {
+    position: relative;
+    left: 100px;
+  }
+  main .recipesPage .leftBox .foodBoxA .userNameBox {
+    position: relative;
+    left: 0px;
+  }
+  main .recipesPage .leftBox .card-carousel .card {
+    min-width: 350px;
+  }
+  main .recipesPage .leftBox .image-container::after {
+    width: 80%;
+  }
+  main .recipesPage .leftBox .card:nth-of-type(3) .image-container {
+    width: 200px;
+    height: 120px;
+  }
+  main .recipesPage .leftBox .card:nth-of-type(2) .image-container {
+    width: 200px;
+    height: 120px;
+  }
+  main .recipesPage .leftBox .card:nth-of-type(1) .image-container {
+    width: 200px;
+    height: 120px;
+  }
+  main .recipesPage .right_box .profileBox {
+    width: 500px;
+  }
+  main .recipesPage .right_box .profileBox img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 250px;
+  }
+  main .recipesPage .right_box .profileBox .textBoxProfile {
+    position: relative;
+    left: -200px;
+  }
+  main .recipesPage .right_box .categoriesBox2 {
+    width: 500px;
+  }
+  main .recipesPage .right_box .macarellaBox img {
+    width: 500px;
+  }
+  main .recipesPage .leftBox {
+    width: 500px;
+  }
+  main .recipesPage .right_box {
+    width: 500px;
+  }
+  main .recipesPage .right_box .macarellaBox {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 530px) {
+  main .recipesPage .right_box .macarellaBox {
+    width: 450px;
+  }
+  main .recipesPage .right_box .macarellaBox img {
+    width: 450px;
+  }
+  main .recipesPage .leftBox {
+    width: 450px;
+  }
+  main .recipesPage .right_box {
+    width: 450px;
+  }
+  main .recipesPage .right_box .categoriesBox2 {
+    width: 450px;
+  }
+  main .recipesPage .right_box .profileBox {
+    width: 450px;
+  }
+  main .recipesPage .right_box .profileBox img {
+    width: 150px;
+    height: 150px;
+  }
+  main .recipesPage .right_box .profileBox .textBoxProfile {
+    position: relative;
+    left: -150px;
+  }
+  main .recipesPage .leftBox .foodBoxA {
+    width: 450px;
+  }
+  main .recipesPage .leftBox .carousel .carousel-inner img {
+    width: 450px;
+  }
+  main .recipesPage .leftBox .carousel {
+    width: 450px;
+    height: 400px;
+  }
+  main .recipesPage .leftBox .carousel .textBoxCarusel {
+    position: relative;
+    left: 25px;
+  }
+  main .recipesPage .right_box .tagsBox {
+    width: 350px;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs {
+    width: 450px;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 455px) {
+  main .recipesPage .right_box {
+    width: 350px;
+  }
+  main .recipesPage .right_box .profileBox {
+    width: 350px;
+  }
+  main .recipesPage .right_box .categoriesBox2 {
+    width: 350px;
+  }
+  main .recipesPage .right_box .macarellaBox img {
+    width: 350px;
+  }
+  main .recipesPage .right_box .macarellaBox {
+    width: 350px;
+  }
+  main .recipesPage .right_box .profileBox img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 220px;
+  }
+  main .recipesPage .leftBox .foodBoxA {
+    width: 350px;
+  }
+  main .recipesPage .right_box .profileBox {
+    width: 350px;
+  }
+  main .recipesPage .right_box .profileBox .textBoxProfile {
+    position: relative;
+    left: -100px;
+  }
+  main .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+    position: relative;
+    left: 30px;
+  }
+  main .recipesPage .leftBox .foodBoxA .quisAutem {
+    position: relative;
+    left: 30px;
+  }
+  main .recipesPage .leftBox .foodBoxA .userNameBox {
+    position: relative;
+    left: -100px;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs {
+    width: 350px;
+  }
+  main .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+    width: 100px;
+  }
+  main .recipesPage .leftBox .carousel .carousel-inner img {
+    width: 350px;
+    height: 350px;
+  }
+  main .recipesPage .leftBox .carousel .carousel-inner {
+    width: 350px;
+    height: 350px;
+  }
+  main .recipesPage .leftBox .carousel {
+    width: 350px;
+  }
+  main .recipesPage .leftBox .carousel .textBoxCarusel {
+    width: 300px;
+    position: relative;
+    left: 40px;
+  }
+  main .recipesPage .leftBox {
+    width: 350px;
+  }
+  main .recipesPage .leftBox .carousel .textBoxCarusel .ChoosingNytrient {
+    font-size: 18px;
+  }
+  main .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+    font-size: 16px;
+  }
+  main .recipesPage .leftBox .lunch {
+    height: 40px;
+  }
+}
+main footer {
+  width: 100%;
+  height: 253px;
+  border-top: 14px solid #867373;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main footer .footAll {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .footAll .footBox {
+  width: 80%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .footAll .footBox .aboutBox {
+  width: 75px;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main footer .footAll .footBox .aboutBox .aboutFootText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .aboutBox span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .TeamBox {
+  width: 75px;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main footer .footAll .footBox .TeamBox .TeamFootText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .TeamBox span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .ArchivesFootText {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main footer .footAll .footBox .ArchivesFootText .ArchivesFootText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .ArchivesFootText .archivesUl .archivesLi {
+  width: 100px;
+  color: #BC5832;
+  position: relative;
+  left: 20px;
+}
+main footer .footAll .footBox .ArchivesFootText span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .socialMediaBox {
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main footer .footAll .footBox .socialMediaBox .iconBoxFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+main footer .footAll .footBox .newSletterBox {
+  width: 260px;
+  height: 69px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+main footer .footAll .footBox .newSletterBox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer .footAll .footBox .newSletterBox label .subscribeBtn {
+  width: 75px;
+  height: 33px;
+  background: #BC5832;
+  border: none;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20.51px;
+}
+main footer .footAll .footBox .newSletterBox label input {
+  width: 180px;
+  height: 33px;
+  background: #DEDADA;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 20.51px;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: #2D2D2D;
+}
+main footer .logoBox {
+  width: 133px;
+  height: 50px;
+}
+main footer .logoBox .logoBoxTastyPost {
+  font-family: Alegreya;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 40.83px;
+  color: #BC5832;
+}
+main footer .nerqevFoot {
+  width: 100%;
+  height: 42px;
+  border: 1px solid black;
+  background: #474343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer .nerqevFoot p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #F8F1F1;
+}
+@media screen and (max-width: 1130px) {
+  main footer .footAll .footBox .aboutBox span {
+    font-size: 12px;
+  }
+  main footer .footAll .footBox .TeamBox span {
+    font-size: 12px;
+  }
+  main footer .footAll .footBox .ArchivesFootText span {
+    font-size: 12px;
+  }
+  main footer .footAll .footBox .socialMediaBox .iconBoxFoot img {
+    width: 30px;
+    height: 30px;
+  }
+  main footer .footAll .footBox .socialMediaBox {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 980px) {
+  main footer .footAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main footer .footAll .footBox {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main footer .logoBox .logoBoxTastyPost {
+    width: 200px;
+    position: relative;
+    left: 10px;
+  }
+  main footer {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main footer .nerqevFoot p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

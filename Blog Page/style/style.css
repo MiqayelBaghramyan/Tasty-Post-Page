@@ -1,0 +1,1029 @@
+@font-face {
+  font-family: Alegreya;
+  src: url("../fonts/Alegreya-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Fondamento;
+  src: url("../fonts/Fondamento-Regular.ttf");
+}
+@font-face {
+  font-family: "Quintessential";
+  src: url("../fonts/Quintessential-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main header {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2EAEA;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+}
+main header .logoBox {
+  width: 80px;
+  height: 22px;
+}
+main header .logoBox a {
+  text-decoration: none;
+  font-family: Alegreya;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 21.78px;
+  color: #BC5832;
+}
+main header #menuIcon {
+  display: none;
+}
+main header .navMenu {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main header .navMenu ul {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+main header .navMenu ul li {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+  transition: 0.3s ease;
+}
+main header .navMenu ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+main header .navMenu ul li .active {
+  font-weight: 600;
+  box-shadow: 0px 23px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 0.3s ease;
+}
+main header .navMenu ul li:hover {
+  font-weight: 600;
+  box-shadow: 0px 23px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 0.3s ease;
+}
+main header .searchBox {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+main header .searchBox .serarchBoxInsideBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+main header .searchBox .serarchBoxInsideBox #userIcon {
+  position: relative;
+  left: -10px;
+}
+main header .searchBox .material-symbols-outlined {
+  cursor: pointer;
+}
+main header .searchBox .search-container {
+  position: relative;
+  width: 200px;
+}
+main header .searchBox #search-input {
+  width: 172px;
+  height: 24px;
+  display: none;
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 1080px) {
+  main header .navMenu {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 990px) {
+  main header .navMenu {
+    width: 400px;
+  }
+  main header .navMenu ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 880px) {
+  main header .navMenu {
+    display: none;
+  }
+  main header .searchBox #search-input {
+    width: 100px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main header .logoBox {
+    width: 120px;
+    position: relative;
+    left: 0px;
+  }
+  main header .logoBox a {
+    font-size: 26px;
+  }
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -350px;
+  }
+}
+@media screen and (max-width: 760px) {
+  main header #userIcon {
+    position: relative;
+    left: 140px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -300px;
+    cursor: pointer;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 100px;
+  }
+  main header #userIcon {
+    position: relative;
+    left: 90px;
+  }
+  main header .navMenu {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 74px;
+    left: 0px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  main header .navMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 0px;
+    top: 40px;
+  }
+}
+@media screen and (max-width: 620px) {
+  main header .navMenu ul {
+    width: 70%;
+    position: relative;
+    left: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -220px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 70px;
+  }
+  main header .logoBox {
+    width: 120px;
+    position: relative;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -220px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 50px;
+  }
+  main header .logoBox {
+    width: 100px;
+    position: relative;
+    left: -10px;
+  }
+  main header .logoBox a {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 475px) {
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -170px;
+  }
+  main header .searchBox {
+    position: relative;
+    left: 80px;
+  }
+  main header .logoBox {
+    width: 100px;
+    position: relative;
+    left: 40px;
+  }
+  main header .logoBox a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 410px) {
+  main header .searchBox {
+    position: relative;
+    left: 50px;
+  }
+  main header #menuIcon {
+    display: flex;
+    position: relative;
+    left: -140px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main header .logoBox {
+    position: relative;
+    left: 40px;
+  }
+}
+main .popup {
+  width: 1207px;
+  min-height: 305px;
+  max-height: 700px;
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(242, 234, 234);
+  padding: 0px;
+  z-index: 1000;
+}
+main .popup span {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  color: rgb(171, 57, 33);
+  font-family: Alegreya;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 74.86px;
+}
+main .popup p {
+  width: 424px;
+  height: 74px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.57px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+main .popup .closeIcon {
+  position: relative;
+  left: 600px;
+  top: -600px;
+  cursor: pointer;
+}
+main .popup form {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 600px;
+  top: -500px;
+  gap: 20px;
+}
+main .popup form input {
+  width: 518px;
+  height: 80px;
+  border-radius: 18px;
+  background: rgb(254, 251, 251);
+  border: none;
+  outline: none;
+  padding-left: 200px;
+}
+main .popup form ::-moz-placeholder {
+  color: rgb(242, 234, 234);
+  font-weight: 600;
+  line-height: 30.48px;
+  font-size: 25px;
+  font-family: Montserrat;
+}
+main .popup form ::placeholder {
+  color: rgb(242, 234, 234);
+  font-weight: 600;
+  line-height: 30.48px;
+  font-size: 25px;
+  font-family: Montserrat;
+}
+main .popup form button {
+  width: 518px;
+  height: 80px;
+  border-radius: 18px;
+  background: rgb(134, 115, 115);
+  color: rgb(255, 255, 255);
+  line-height: 30.48px;
+  font-size: 25px;
+  font-family: Montserrat;
+  font-weight: 700;
+  border: none;
+}
+main .popup form img {
+  position: relative;
+  top: 75px;
+  left: -150px;
+}
+@media screen and (max-width: 1230px) {
+  main .popup {
+    width: 900px;
+    height: 550px;
+    top: 60%;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 350px;
+    top: -280px;
+  }
+  main .popup form .mailIcon {
+    position: relative;
+    top: 75px;
+    left: -110px;
+    z-index: 9;
+  }
+  main .popup p {
+    font-size: 26px;
+  }
+  main .popup form {
+    position: relative;
+    left: 430px;
+    top: -600px;
+  }
+  main .popup form input {
+    width: 300px;
+    padding-left: 80px;
+  }
+  main .popup form button {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 910px) {
+  main .popup {
+    width: 700px;
+    height: 500px;
+  }
+  main .popup .leftImg {
+    height: 500px;
+  }
+  main .popup form {
+    position: relative;
+    left: 275px;
+    top: -450px;
+  }
+  main .popup p {
+    width: 300px;
+    font-size: 22px;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 300px;
+    top: -220px;
+  }
+}
+@media screen and (max-width: 705px) {
+  main .popup .leftImg {
+    display: none;
+  }
+  main .popup {
+    width: 500px;
+    display: none;
+    background-image: url("../images/blogPageImg/popupImg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 460px;
+    top: 10px;
+    cursor: pointer;
+  }
+  main .popup form {
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 8px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(165, 157, 157, 0.472);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  main .popup form::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+  }
+  main .popup form span,
+  main .popup form p,
+  main .popup form img,
+  main .popup form input[type=email],
+  main .popup form button {
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+  }
+  main .popup form input[type=email] {
+    width: 300px;
+    padding-left: 80px;
+    box-sizing: border-box;
+  }
+  main .popup form button {
+    width: 300px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .popup {
+    width: 350px;
+    height: 450px;
+  }
+  main .popup form {
+    width: 300px;
+  }
+  main .popup form::before {
+    height: 320px;
+  }
+  main .popup form input[type=email] {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 0px;
+    padding-left: 40px;
+  }
+  main .popup form input::-moz-placeholder {
+    font-size: 18px;
+  }
+  main .popup form input::placeholder {
+    font-size: 18px;
+  }
+  main .popup form button {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    font-size: 16px;
+  }
+  main .popup form .mailIcon {
+    width: 20px;
+    position: relative;
+    top: 40px;
+    left: -80px;
+  }
+  main .popup .closeIcon {
+    position: relative;
+    left: 300px;
+  }
+}
+main .blogPage {
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px;
+  position: relative;
+  top: 100px;
+}
+main .blogPage .upBox {
+  width: 1234px;
+  height: 295px;
+}
+main .blogPage .upBox .orderFreshFood {
+  width: 1048px;
+  height: 113px;
+  border-radius: 5px 5px 80px 5px;
+  background: rgba(134, 115, 115, 0.885);
+  position: relative;
+  top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .blogPage .upBox .orderFreshFood .orderFreshFoodSpan {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 24px;
+  letter-spacing: 20%;
+  color: rgb(255, 255, 255);
+}
+main .blogPage .downBox {
+  width: 1234px;
+  height: 310px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  gap: 40px;
+}
+main .blogPage .downBox .mealBox {
+  width: 361px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .blogPage .downBox .mealBox .btnMeal {
+  width: 282px;
+  height: 43px;
+  border-radius: 12px;
+  background: rgb(242, 234, 234);
+  border: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 1275px) {
+  main .blogPage {
+    height: 1300px;
+  }
+  main .blogPage .upBox {
+    width: 1000px;
+    height: 200px;
+  }
+  main .blogPage .upBox img {
+    width: 1000px;
+  }
+  main .blogPage .upBox .orderFreshFood {
+    width: 800px;
+  }
+  main .blogPage .downBox {
+    width: 950px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    flex-wrap: wrap;
+  }
+  main .blogPage .downBox .mealBox {
+    width: 300px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  main .blogPage .upBox {
+    width: 800px;
+    height: 150px;
+  }
+  main .blogPage .upBox img {
+    width: 800px;
+  }
+  main .blogPage .upBox .orderFreshFood {
+    width: 600px;
+    position: relative;
+    top: -150px;
+  }
+}
+@media screen and (max-width: 970px) {
+  main .blogPage .downBox .mealBox {
+    width: 250px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 250px;
+  }
+  main .blogPage .downBox {
+    width: 800px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    flex-wrap: wrap;
+  }
+  main .blogPage .downBox .mealBox .btnMeal {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 825px) {
+  main .blogPage {
+    height: 950px;
+  }
+  main .blogPage .upBox {
+    width: 600px;
+    height: 150px;
+  }
+  main .blogPage .upBox img {
+    width: 600px;
+  }
+  main .blogPage .upBox .orderFreshFood {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    top: -130px;
+  }
+  main .blogPage .downBox .mealBox {
+    width: 200px;
+    height: 220px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 200px;
+  }
+  main .blogPage .downBox {
+    width: 700px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    flex-wrap: wrap;
+  }
+  main .blogPage .downBox .mealBox .btnMeal {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 730px) {
+  main .blogPage .downBox {
+    width: 600px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 150px;
+  }
+  main .blogPage .downBox .mealBox .btnMeal {
+    width: 150px;
+    font-size: 16px;
+  }
+  main .blogPage .downBox .mealBox {
+    width: 180px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 625px) {
+  main .blogPage {
+    height: 750px;
+  }
+  main .blogPage .upBox {
+    width: 400px;
+    height: 80px;
+  }
+  main .blogPage .upBox img {
+    width: 400px;
+  }
+  main .blogPage .upBox .orderFreshFood {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: -60px;
+  }
+  main .blogPage .upBox .orderFreshFood .orderFreshFoodSpan {
+    font-size: 14px;
+  }
+  main .blogPage .downBox {
+    width: 450px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 120px;
+  }
+  main .blogPage .downBox .mealBox .btnMeal {
+    width: 120px;
+    font-size: 14px;
+  }
+  main .blogPage .downBox .mealBox {
+    width: 140px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 440px) {
+  main .blogPage .downBox .mealBox {
+    width: 100px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 100px;
+  }
+  main .blogPage .downBox {
+    width: 370px;
+  }
+  main .blogPage .downBox .mealBox .btnMeal {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+  }
+  main .blogPage .upBox {
+    width: 350px;
+  }
+  main .blogPage .upBox img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .blogPage {
+    height: 500px;
+    position: relative;
+    top: 80px;
+  }
+  main .blogPage .downBox .mealBox {
+    width: 80px;
+    height: 80px;
+  }
+  main .blogPage .downBox .mealBox img {
+    width: 80px;
+  }
+  main .blogPage .downBox {
+    width: 270px;
+  }
+  main .blogPage .downBox .mealBox .btnMeal {
+    width: 80px;
+    height: 40px;
+    font-size: 8px;
+  }
+  main .blogPage .upBox {
+    width: 300px;
+  }
+  main .blogPage .upBox img {
+    width: 300px;
+  }
+}
+main footer {
+  width: 100%;
+  height: 253px;
+  border-top: 14px solid #867373;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main footer .footAll {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .footAll .footBox {
+  width: 80%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .footAll .footBox .aboutBox {
+  width: 75px;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main footer .footAll .footBox .aboutBox .aboutFootText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .aboutBox span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .TeamBox {
+  width: 75px;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main footer .footAll .footBox .TeamBox .TeamFootText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .TeamBox span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .ArchivesFootText {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main footer .footAll .footBox .ArchivesFootText .ArchivesFootText {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .ArchivesFootText .archivesUl .archivesLi {
+  width: 100px;
+  color: #BC5832;
+  position: relative;
+  left: 20px;
+}
+main footer .footAll .footBox .ArchivesFootText span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
+}
+main footer .footAll .footBox .socialMediaBox {
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main footer .footAll .footBox .socialMediaBox .iconBoxFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+main footer .footAll .footBox .newSletterBox {
+  width: 260px;
+  height: 69px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+main footer .footAll .footBox .newSletterBox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer .footAll .footBox .newSletterBox label .subscribeBtn {
+  width: 75px;
+  height: 33px;
+  background: #BC5832;
+  border: none;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20.51px;
+}
+main footer .footAll .footBox .newSletterBox label input {
+  width: 180px;
+  height: 33px;
+  background: #DEDADA;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 20.51px;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: #2D2D2D;
+}
+main footer .logoBox {
+  width: 133px;
+  height: 50px;
+}
+main footer .logoBox .logoBoxTastyPost {
+  font-family: Alegreya;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 40.83px;
+  color: #BC5832;
+}
+main footer .nerqevFoot {
+  width: 100%;
+  height: 42px;
+  border: 1px solid black;
+  background: #474343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer .nerqevFoot p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #F8F1F1;
+}
+@media screen and (max-width: 1130px) {
+  main footer .footAll .footBox .aboutBox span {
+    font-size: 12px;
+  }
+  main footer .footAll .footBox .TeamBox span {
+    font-size: 12px;
+  }
+  main footer .footAll .footBox .ArchivesFootText span {
+    font-size: 12px;
+  }
+  main footer .footAll .footBox .socialMediaBox .iconBoxFoot img {
+    width: 30px;
+    height: 30px;
+  }
+  main footer .footAll .footBox .socialMediaBox {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 980px) {
+  main footer .footAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main footer .footAll .footBox {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main footer {
+    height: 700px;
+  }
+  main footer .logoBox {
+    width: 200px;
+    position: relative;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main footer .nerqevFoot p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,1005 @@
+@mixin Header () {
+    @media screen and (max-width:1080px) {
+        header .navMenu {
+            width: 500px;
+        }
+    }
+
+    @media screen and (max-width:990px) {
+        header .navMenu {
+            width: 400px;
+        }
+
+        header .navMenu ul li a {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width:880px) {
+        header .navMenu {
+            display: none;
+        }
+
+        header .searchBox #search-input {
+            width: 100px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        header .logoBox {
+            width: 120px;
+            position: relative;
+            left: 0px;
+        }
+
+        header .logoBox a {
+            font-size: 26px;
+        }
+
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -350px;
+        }
+    }
+
+    @media screen and (max-width:760px) {
+        header #userIcon {
+            position: relative;
+            left: 140px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+    @media screen and (max-width:700px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -300px;
+            cursor: pointer;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 100px;
+        }
+
+        header #userIcon {
+            position: relative;
+            left: 90px;
+        }
+
+        header .navMenu {
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 74px;
+            left: 0px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .navMenu ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            left: 0px;
+            top: 40px;
+        }
+    }
+
+
+    @media screen and (max-width:620px) {
+        header .navMenu ul {
+            width: 70%;
+            position: relative;
+            left: 70px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -220px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 70px;
+        }
+
+
+        header .logoBox {
+            width: 120px;
+            position: relative;
+            left: 20px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -220px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 50px;
+        }
+
+
+        header .logoBox {
+            width: 100px;
+            position: relative;
+            left: -10px;
+        }
+
+        header .logoBox a {
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (max-width:475px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -170px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 80px;
+        }
+
+
+        header .logoBox {
+            width: 100px;
+            position: relative;
+            left: 40px;
+        }
+
+        header .logoBox a {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width:410px) {
+        header .searchBox {
+            position: relative;
+            left: 50px;
+        }
+
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -140px;
+        }
+    }
+
+    @media screen and (max-width:375px) {
+        header .logoBox {
+            position: relative;
+            left: 40px;
+        }
+    }
+}
+
+@mixin Popup() {
+    @media screen and (max-width:1230px) {
+        .popup {
+            width: 900px;
+            height: 550px;
+            top: 60%;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 350px;
+            top: -280px;
+        }
+
+        .popup form .mailIcon {
+            position: relative;
+            top: 75px;
+            left: -110px;
+            z-index: 9;
+        }
+
+        .popup p {
+            font-size: 26px;
+        }
+
+        .popup form {
+            position: relative;
+            left: 430px;
+            top: -600px;
+        }
+
+        .popup form input {
+            width: 300px;
+            padding-left: 80px;
+        }
+
+        .popup form button {
+            width: 300px;
+        }
+    }
+
+
+    @media screen and (max-width:910px) {
+        .popup {
+            width: 700px;
+            height: 500px;
+        }
+
+        .popup .leftImg {
+            height: 500px;
+        }
+
+        .popup form {
+            position: relative;
+            left: 275px;
+            top: -450px;
+        }
+
+        .popup p {
+            width: 300px;
+            font-size: 22px;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 300px;
+            top: -220px;
+        }
+    }
+
+    @media screen and (max-width:705px) {
+        .popup .leftImg {
+            display: none;
+        }
+
+        .popup {
+            width: 500px;
+            display: none;
+            background-image: url("../images/Main Page Images/unsplash_y7PrYOwjItQ.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 460px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        .popup form {
+            width: 400px;
+            border: 1px solid white;
+            border-radius: 8px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(165, 157, 157, 0.472);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup form::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background-image: inherit;
+            background-size: cover;
+            filter: blur(4px);
+            z-index: -1;
+        }
+
+        .popup form span,
+        .popup form p,
+        .popup form img,
+        .popup form input[type="email"],
+        .popup form button {
+            position: relative;
+            z-index: 1;
+            font-size: 28px;
+        }
+
+        .popup form input[type="email"] {
+            width: 300px;
+            padding-left: 80px;
+            box-sizing: border-box;
+        }
+
+        .popup form button {
+            width: 300px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .popup {
+            width: 350px;
+            height: 450px;
+        }
+
+        .popup form {
+            width: 300px;
+        }
+
+        .popup form::before {
+            height: 320px;
+        }
+
+        .popup form input[type=email] {
+            width: 200px;
+            height: 30px;
+            position: relative;
+            top: 0px;
+            padding-left: 40px;
+        }
+
+        .popup form input::placeholder {
+            font-size: 18px;
+        }
+
+        .popup form button {
+            width: 200px;
+            height: 30px;
+            position: relative;
+            top: 0;
+            font-size: 16px;
+        }
+
+        .popup form .mailIcon {
+            width: 20px;
+            position: relative;
+            top: 44px;
+            left: -80px;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 300px;
+        }
+    }
+}
+
+@mixin recipesPage() {
+    @media screen and (max-width:1220px) {
+        .recipesPage .leftBox .carousel .carousel-inner img {
+            width: 700px;
+            height: 400px;
+        }
+
+        .recipesPage .leftBox .carousel {
+            width: 700px;
+            height: 400px;
+        }
+
+
+        .recipesPage .leftBox .upBox {
+            width: 700px;
+            border-radius: 40px;
+        }
+
+        .recipesPage .leftBox .carousel .textBoxCarusel {
+            position: relative;
+            left: 150px;
+            top: -320px;
+        }
+
+        .recipesPage .leftBox {
+            width: 700px;
+        }
+
+        .recipesPage .leftBox .foodBoxA {
+            width: 700px;
+            border-radius: 40px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+            width: 280px;
+            position: relative;
+            left: 400px;
+            font-size: 18px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .quisAutem {
+            width: 300px;
+            position: relative;
+            left: 400px;
+            top: 20px;
+            font-size: 12px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .userNameBox {
+            position: relative;
+            left: 250px;
+            top: -210px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox {
+            width: 700px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox .oneBoxImg img {
+            width: 200px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox .twoBoxImg img {
+            width: 200px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox .threeBoxImg img {
+            width: 200px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox .twoBoxImg .lunch {
+            position: relative;
+            top: 150px;
+            left: -50px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox .oneBoxImg .lunch {
+            position: relative;
+            top: 150px;
+            left: -30px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox .threeBoxImg .lunch_ {
+            position: relative;
+            top: 150px;
+            left: -20px;
+        }
+    }
+
+
+    @media screen and (max-width:1030px) {
+        .recipesPage {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            margin: 100px;
+            height: 2650px;
+            position: relative;
+            top: 20px;
+        }
+
+        .recipesPage .leftBox .container {
+            display: flex;
+            position: relative;
+            top: -40px;
+        }
+
+        .recipesPage .leftBox .typesOfFoodBox {
+            display: none;
+        }
+
+        .recipesPage .right_box .profileBox {
+            width: 700px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            background-color: #F2EAEA;
+        }
+
+        .recipesPage .right_box .profileBox img {
+            width: 240px;
+            height: 240px;
+            position: relative;
+            left: 300px;
+        }
+
+        .recipesPage .right_box .profileBox .textBoxProfile {
+            position: relative;
+            left: -250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .recipesPage .right_box .profileBox .profileBoxName {
+            width: 200px;
+            font-size: 20px;
+        }
+
+        .recipesPage .right_box .profileBox .profileBoxProfession {
+            font-size: 16px;
+        }
+
+        .recipesPage .right_box .categoriesBox {
+            display: none;
+        }
+
+        .recipesPage .right_box .categoriesBox2 {
+            display: flex;
+        }
+
+
+        .recipesPage .right_box .macarellaBox {
+            width: 700px;
+            height: 350px;
+        }
+
+        .recipesPage .right_box .macarellaBox img {
+            width: 700px;
+            height: 350px;
+            position: relative;
+            top: 50px;
+        }
+
+        .recipesPage .right_box .macarellaBox .macarellaBtn {
+            width: 200px;
+            height: 50px;
+        }
+
+        .recipesPage .right_box .tagsBox {
+            width: 500px;
+            height: 300px;
+        }
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs {
+            width: 500px;
+            height: 350px;
+            background: #F2EAEA;
+        }
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+            width: 150px;
+            height: 40px;
+            background: white;
+        }
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+            font-size: 25px;
+        }
+    }
+
+
+    @media screen and (max-width:745px) {
+        .recipesPage .leftBox .carousel .carousel-inner img {
+            width: 500px;
+            height: 400px;
+        }
+
+        .recipesPage .leftBox .lunch {
+            height: 35px;
+        }
+
+        .recipesPage .leftBox .carousel {
+            width: 500px;
+            height: 400px;
+        }
+
+        .recipesPage .leftBox .carousel .textBoxCarusel {
+            position: relative;
+            left: 50px;
+        }
+
+        .recipesPage .leftBox .foodBoxA {
+            width: 500px;
+        }
+
+        .recipesPage .leftBox .upBox {
+            width: 500px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox {
+            width: 400px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox .nowThatText {
+            width: 380px;
+            font-size: 14px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox ul li {
+            font-size: 14px;
+            width: 380px;
+            position: relative;
+            left: 40px;
+        }
+
+        .recipesPage .leftBox .upBox .choosingNutrient {
+            font-size: 28px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox ul {
+            width: 380px;
+            position: relative;
+            left: -40px;
+        }
+
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox .byMakingText {
+            font-size: 14px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox {
+            height: 500px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+            position: relative;
+            left: 100px;
+            font-size: 16px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .quisAutem {
+            position: relative;
+            left: 100px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .userNameBox {
+            position: relative;
+            left: 0px;
+        }
+
+
+        .recipesPage .leftBox .card-carousel .card {
+            min-width: 300px;
+            padding: 0px;
+        }
+
+        .recipesPage .leftBox .image-container::after {
+            width: 80%;
+        }
+
+        .recipesPage .leftBox .card:nth-of-type(3) .image-container {
+            width: 200px;
+            height: 120px;
+        }
+
+        .recipesPage .leftBox .card:nth-of-type(2) .image-container {
+            width: 200px;
+            height: 120px;
+        }
+
+        .recipesPage .leftBox .card:nth-of-type(1) .image-container {
+            width: 200px;
+            height: 120px;
+        }
+
+        .recipesPage .right_box .profileBox {
+            width: 500px;
+        }
+
+        .recipesPage .right_box .profileBox img {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 250px;
+        }
+
+        .recipesPage .right_box .profileBox .textBoxProfile {
+            position: relative;
+            left: -200px;
+        }
+
+        .recipesPage .right_box .categoriesBox2 {
+            width: 500px;
+        }
+
+        .recipesPage .right_box .macarellaBox img {
+            width: 500px;
+        }
+
+        .recipesPage .leftBox {
+            width: 500px;
+        }
+
+        .recipesPage .right_box {
+            width: 500px;
+        }
+
+        .recipesPage .right_box .macarellaBox {
+            width: 500px;
+        }
+    }
+
+    @media screen and (max-width:530px) {
+        .recipesPage .right_box .macarellaBox {
+            width: 450px;
+        }
+
+        .recipesPage .right_box .macarellaBox img {
+            width: 450px;
+        }
+
+        .recipesPage .leftBox {
+            width: 450px;
+        }
+
+        .recipesPage .right_box {
+            width: 450px;
+        }
+
+        .recipesPage .leftBox .upBox {
+            width: 450px;
+        }
+
+        .recipesPage .right_box .categoriesBox2 {
+            width: 450px;
+        }
+
+        .recipesPage .right_box .profileBox {
+            width: 450px;
+        }
+
+        .recipesPage .right_box .profileBox img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .recipesPage .right_box .profileBox .textBoxProfile {
+            position: relative;
+            left: -150px;
+        }
+
+        .recipesPage .leftBox .foodBoxA {
+            width: 450px;
+        }
+
+        .recipesPage .leftBox .carousel .carousel-inner img {
+            width: 450px;
+        }
+
+
+        .recipesPage .leftBox .carousel {
+            width: 450px;
+            height: 400px;
+        }
+
+        .recipesPage .leftBox .carousel .textBoxCarusel {
+            position: relative;
+            left: 25px;
+        }
+
+        .recipesPage .right_box .tagsBox {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs {
+            width: 450px;
+        }
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width:455px) {
+        .recipesPage .right_box {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .profileBox {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .categoriesBox2 {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .macarellaBox img {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .macarellaBox {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .profileBox img {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 220px;
+        }
+
+        .recipesPage .leftBox .foodBoxA {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .profileBox {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .profileBox .textBoxProfile {
+            position: relative;
+            left: -100px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .aVagetarianSpan {
+            position: relative;
+            left: 30px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .quisAutem {
+            position: relative;
+            left: 30px;
+        }
+
+        .recipesPage .leftBox .foodBoxA .userNameBox {
+            position: relative;
+            left: -100px;
+        }
+
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs {
+            width: 350px;
+        }
+
+        .recipesPage .right_box .tagsBox .tagsBoxDivs .tagsBoxDivsbox {
+            width: 100px;
+        }
+
+        .recipesPage .leftBox .carousel .carousel-inner img {
+            width: 300px;
+        }
+
+        .recipesPage .leftBox .carousel .carousel-inner {
+            width: 300px;
+        }
+
+        .recipesPage .leftBox .carousel {
+            width: 350px
+        }
+
+        .recipesPage .leftBox .card-carousel .card {
+            width: 300px;
+        }
+
+        .recipesPage .leftBox .card-carousel {
+            width: 200px;
+        }
+
+        .recipesPage .leftBox .carousel .textBoxCarusel {
+            width: 300px;
+            position: relative;
+            left: 40px;
+        }
+
+        .recipesPage .leftBox {
+            width: 350px;
+        }
+
+        .recipesPage .leftBox .upBox {
+            width: 350px;
+        }
+
+        .recipesPage .leftBox .upBox .choosingNutrient {
+            font-size: 22px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox .nowThatText {
+            width: 270px;
+            font-size: 10px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox ul li {
+            width: 270px;
+            font-size: 10px;
+            line-height: 15px;
+
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox ul {
+            width: 270px;
+            position: relative;
+            left: -40px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox .byMakingText {
+            width: 270px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox {
+            width: 300px;
+        }
+
+        .recipesPage .leftBox .upBox .upBoxInsideBox {
+            height: 400px;
+            gap: 0px;
+        }
+
+        .recipesPage .leftBox .upBox {
+            height: 500px;
+        }
+    }
+}
+
+
+
+
+@mixin Footer() {
+    @media screen and (max-width:1130px) {
+        footer .footAll .footBox .aboutBox span {
+            font-size: 12px;
+        }
+
+        footer .footAll .footBox .TeamBox span {
+            font-size: 12px;
+        }
+
+        footer .footAll .footBox .ArchivesFootText span {
+            font-size: 12px;
+        }
+
+        footer .footAll .footBox .socialMediaBox .iconBoxFoot img {
+            width: 30px;
+            height: 30px;
+        }
+
+        footer .footAll .footBox .socialMediaBox {
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width:980px) {
+        footer .footAll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        footer .footAll .footBox {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        footer {
+            height: 700px;
+        }
+
+        footer .logoBox .logoBoxTastyPost {
+            width: 200px;
+            position: relative;
+            left: 10px;
+        }
+    }
+
+    @media screen and (max-width:380px) {
+        footer .nerqevFoot p {
+            font-size: 10px;
+        }
+    }
+}

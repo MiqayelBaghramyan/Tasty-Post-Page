@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <div class="logoBox">
+                <a href="../index.html">
+                    Tasty Post
+                </a>
+            </div>
+            <span id="menuIcon" class="material-symbols-outlined" onclick="toggleMenu()">
+                menu
+            </span>
+            <nav class="navMenu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active"  href="about.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Blog Page/blog.html">
+                            BLOG
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../PostPage/post.html">
+                            RECIPES
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="searchBox" class="searchBox">
+                <div class="serarchBoxInsideBox">
+                    <span id="popupLink" id="userIcon" class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <span id="searchIcon" class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+                <input type="text" id="search-input" placeholder="Search...">
+            </div>
+        </header>
+
+
+        <div id="popup" class="popup">
+            <img class="leftImg" src="../images/Main Page Images/unsplash_y7PrYOwjItQ.png" alt="">
+            <img id="closePopup" class="closeIcon" src="images/aboutPageImg/Group 13.png" alt="">
+            <form action="">
+                <span>Tasty Post</span>
+                <p>Get this season’s Recipes & Episodes FREE </p>
+                <img class="mailIcon" src="images/aboutPageImg/Vector (6).png" alt="">
+                <input type="email" placeholder="Email address">
+                <button>REGISTER NOW</button>
+            </form>
+        </div>
+
+
+
+        <div class="aboutPage">
+            <div class="boxAboutCenter">
+                <img src="images/aboutPageImg/img1.png" alt="">
+
+                <div class="textBox">
+                    <span class="AboutSpan">ABOUT</span>
+                    <p>Tasty Post Blog is a recipe blog written by husband and wife team Mike & Steph. In its 7 years of
+                        existence it has covered such diverse subjects as mini beef wellingtons, driving through
+                        iceland’s ring road, and making pho in a pressure cooker.</p>
+                    <p>Currently eating and cooking in California
+                        Interested in working with us? Occasionally we create sponsored posts for brands that are a good
+                        fit for Tasty Post Blog. We’re also available for recipe development & photography. Send us a
+                        quick email for more info!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footAll">
+                <div class="logoBox">
+                    <h3 class="logoBoxTastyPost">Tasty Post</h3>
+                </div>
+                <div class="footBox">
+                    <div class="aboutBox">
+                        <span class="aboutFootText">About</span>
+                        <span>About us</span>
+                        <span>Support</span>
+                    </div>
+
+                    <div class="TeamBox">
+                        <span class="TeamFootText">Team</span>
+                        <span>Privacy</span>
+                        <span>Security</span>
+                    </div>
+
+                    <div class="ArchivesFootText">
+                        <span class="ArchivesFootText">Archives</span>
+                        <ul class="archivesUl">
+                            <li class="archivesLi">
+                                <span>Jun 2022</span>
+                            </li>
+                            <li class="archivesLi">
+                                <span>Jun 2021</span>
+                            </li>
+                            <li class="archivesLi">
+                                <span>Jun 2020-18</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socialMediaBox">
+                        <span>Social media</span>
+                        <div class="iconBoxFoot">
+                            <img src="images/footerImg/Vector (6).png" alt="">
+                            <img src="images/footerImg/Vector (7).png" alt="">
+                            <img src="images/footerImg/Group 15.png" alt="">
+                        </div>
+                    </div>
+                    <div class="newSletterBox">
+                        <span>Newsletter</span>
+                        <label for="">
+                            <input type="email" placeholder="Your email address">
+                            <button class="subscribeBtn">Subscribe</button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nerqevFoot">
+                <p>© 2023 Tasty Post. All Rights Reserved. A Raptive Partner Site.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

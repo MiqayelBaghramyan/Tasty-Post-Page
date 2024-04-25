@@ -1,0 +1,870 @@
+@mixin Header () {
+    @media screen and (max-width:1080px) {
+        header .navMenu {
+            width: 500px;
+        }
+    }
+
+    @media screen and (max-width:990px) {
+        header .navMenu {
+            width: 400px;
+        }
+
+        header .navMenu ul li a {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width:880px) {
+        header .navMenu {
+            display: none;
+        }
+
+        header .searchBox #search-input {
+            width: 100px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        header .logoBox {
+            width: 120px;
+            position: relative;
+            left: 0px;
+        }
+
+        header .logoBox a {
+            font-size: 26px;
+        }
+
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -350px;
+        }
+    }
+
+    @media screen and (max-width:760px) {
+        header #userIcon {
+            position: relative;
+            left: 140px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width:700px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -300px;
+            cursor: pointer;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 100px;
+        }
+
+        header #userIcon {
+            position: relative;
+            left: 90px;
+        }
+
+        header .navMenu {
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 74px;
+            left: 0px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .navMenu ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            left: 0px;
+            top: 40px;
+        }
+    }
+
+
+    @media screen and (max-width:620px) {
+        header .navMenu ul {
+            width: 70%;
+            position: relative;
+            left: 70px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -220px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 70px;
+        }
+
+
+        header .logoBox {
+            width: 120px;
+            position: relative;
+            left: 20px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -220px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 50px;
+        }
+
+
+        header .logoBox {
+            width: 100px;
+            position: relative;
+            left: -10px;
+        }
+
+        header .logoBox a {
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (max-width:475px) {
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -170px;
+        }
+
+        header .searchBox {
+            position: relative;
+            left: 80px;
+        }
+
+
+        header .logoBox {
+            width: 100px;
+            position: relative;
+            left: 40px;
+        }
+
+        header .logoBox a {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width:410px) {
+        header .searchBox {
+            position: relative;
+            left: 50px;
+        }
+
+        header #menuIcon {
+            display: flex;
+            position: relative;
+            left: -140px;
+        }
+    }
+
+    @media screen and (max-width:375px) {
+        header .logoBox {
+            position: relative;
+            left: 40px;
+        }
+    }
+}
+
+
+@mixin Popup() {
+
+    @media screen and (max-width:2000px) {
+        .popup {
+            height: 700px;
+            top: 50%;
+        }
+    }
+
+    @media screen and (max-width:1230px) {
+        .popup {
+            width: 900px;
+            height: 550px;
+            top: 60%;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 350px;
+            top: -280px;
+        }
+
+        .popup form .mailIcon {
+            position: relative;
+            top: 75px;
+            left: -110px;
+            z-index: 9;
+        }
+
+        .popup p {
+            font-size: 26px;
+        }
+
+        .popup form {
+            position: relative;
+            left: 430px;
+            top: -600px;
+        }
+
+        .popup form input {
+            width: 300px;
+            padding-left: 80px;
+        }
+
+        .popup form button {
+            width: 300px;
+        }
+    }
+
+
+    @media screen and (max-width:910px) {
+        .popup {
+            width: 700px;
+            height: 500px;
+        }
+
+        .popup .leftImg {
+            height: 500px;
+        }
+
+        .popup form {
+            position: relative;
+            left: 275px;
+            top: -450px;
+        }
+
+        .popup p {
+            width: 300px;
+            font-size: 22px;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 300px;
+            top: -220px;
+        }
+    }
+
+    @media screen and (max-width:705px) {
+        .popup .leftImg {
+            display: none;
+        }
+
+        .popup {
+            width: 500px;
+            display: none;
+            background-image: url("../images/PostPageImg/popupImg.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 460px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        .popup form {
+            width: 400px;
+            border: 1px solid white;
+            border-radius: 8px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(165, 157, 157, 0.472);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup form::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background-image: inherit;
+            background-size: cover;
+            filter: blur(4px);
+            z-index: -1;
+        }
+
+        .popup form span,
+        .popup form p,
+        .popup form img,
+        .popup form input[type="email"],
+        .popup form button {
+            position: relative;
+            z-index: 1;
+            font-size: 28px;
+        }
+
+        .popup form input[type="email"] {
+            width: 300px;
+            padding-left: 80px;
+            box-sizing: border-box;
+            position: relative;
+            top: -2px;
+        }
+
+        .popup form button {
+            width: 300px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .popup {
+            width: 350px;
+            height: 500px;
+        }
+
+        .popup form {
+            width: 300px;
+            // height: 320px;
+        }
+
+        .popup form::before {
+            height: 320px;
+        }
+
+        .popup form input[type=email] {
+            width: 200px;
+            height: 30px;
+            position: relative;
+            top: 0px;
+            padding-left: 40px;
+        }
+
+        .popup form input::placeholder {
+            font-size: 18px;
+        }
+
+        .popup form button {
+            width: 200px;
+            height: 30px;
+            position: relative;
+            top: 0;
+            font-size: 16px;
+        }
+
+        .popup form .mailIcon {
+            width: 20px;
+            position: relative;
+            top: 45px;
+            left: -80px;
+        }
+
+        .popup .closeIcon {
+            position: relative;
+            left: 300px;
+            position: relative;
+            top: 30px;
+        }
+    }
+}
+
+@mixin postPage() {
+    @media screen and (max-width:1270px) {
+        .postPage .menu1Box {
+            width: 1000px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            width: 640px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .titleText {
+            font-size: 28px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            font-size: 28px;
+            position: relative;
+            left: 15px;
+        }
+
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            width: 640px;
+        }
+
+        .postPage .menu2Box {
+            width: 1000px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .titleText {
+            font-size: 28px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            font-size: 28px;
+            position: relative;
+            left: 15px;
+        }
+
+        .postPage .viewMoreBtn {
+            position: relative;
+            left: 100px;
+        }
+    }
+
+
+    @media screen and (max-width:1100px) {
+        .postPage .menu1Box {
+            width: 800px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            width: 440px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .titleText {
+            font-size: 18px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            font-size: 18px;
+            position: relative;
+            left: 15px;
+        }
+
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            width: 440px;
+        }
+
+        .postPage .menu2Box {
+            width: 800px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .titleText {
+            font-size: 18px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            font-size: 18px;
+            position: relative;
+            left: 15px;
+        }
+
+        .postPage .viewMoreBtn {
+            position: relative;
+            left: -20px;
+        }
+    }
+
+
+    @media screen and (max-width:900px) {
+        .postPage .menu1Box {
+            width: 600px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            width: 240px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .titleText {
+            width: 220px;
+            font-size: 14px;
+            position: relative;
+            top: 20px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            width: 200px;
+            font-size: 12px;
+            position: relative;
+            left: -3px;
+            line-height: 45px;
+        }
+
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            width: 240px;
+        }
+
+        .postPage .menu2Box {
+            width: 600px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .titleText {
+            width: 220px;
+            font-size: 14px;
+            position: relative;
+            top: 20px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            width: 200px;
+            font-size: 12px;
+            position: relative;
+            left: -3px;
+            line-height: 45px;
+        }
+
+        .postPage .viewMoreBtn {
+            position: relative;
+            left: -20px;
+        }
+
+        .postPage .souprecipesBox {
+            width: 500px;
+        }
+    }
+
+    @media screen and (max-width:700px) {
+        .postPage .menu2Box {
+            width: 500px;
+        }
+
+        .postPage .menu2Box img {
+            width: 300px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            height: 300px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            line-height: 30px;
+        }
+
+        .postPage .menu1Box {
+            width: 500px;
+        }
+
+        .postPage .menu1Box img {
+            width: 300px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            height: 300px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            line-height: 30px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .postPage .menu2Box {
+            width: 400px;
+            height: 200px;
+        }
+
+        .postPage .menu2Box img {
+            width: 250px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            height: 250px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            line-height: 20px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .titleText {
+            line-height: 20px;
+            position: relative;
+            top: -10px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        .postPage {
+            height: 1100px;
+        }
+
+        .postPage .menu1Box {
+            height: 200px;
+        }
+
+        .postPage .menu1Box img {
+            width: 200px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            height: 200px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 {
+            line-height: 0px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            line-height: 15px;
+            font-size: 10px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .titleText {
+            line-height: 20px;
+            position: relative;
+            top: 0;
+        }
+
+        .postPage .menu2Box img {
+            width: 200px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            height: 200px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 {
+            line-height: 15px;
+            font-size: 10px;
+            position: relative;
+            top: 20px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            position: relative;
+            top: -20px;
+        }
+
+        .postPage .viewMoreBtn {
+            position: relative;
+            left: 0px;
+        }
+    }
+
+    @media screen and (max-width:510px) {
+        .postPage {
+            height: 850px;
+            position: relative;
+            top: 50px;
+        }
+
+        .postPage .souprecipesBox {
+            width: 350px;
+        }
+
+        .postPage .souprecipesBox .soupRecipesSpan{
+            font-size: 18px;
+        }
+
+        .postPage .menu1Box img {
+            width: 120px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 {
+            height: 120px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            height: 120px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .titleText {
+            width: 160px;
+            font-size: 10px;
+            position: relative;
+            top: 10px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            position: relative;
+            top: -10px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 {
+            height: 120px;
+        }
+
+        .postPage .menu2Box {
+            height: 80px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            height: 120px;
+        }
+
+        .postPage .menu2Box img {
+            width: 120px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .titleText {
+            width: 160px;
+            line-height: 15px;
+            font-size: 9px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            font-size: 10px;
+            line-height: 17px;
+            position: relative;
+            top: -30px;
+        }
+
+        .postPage .menu2Box img {
+            height: 120px;
+        }
+
+        .postPage .menu1Box {
+            width: 350px;
+        }
+
+        .postPage .menu2Box {
+            width: 350px;
+        }
+    }
+
+    @media screen and (max-width:370px) {
+        .postPage {
+            height: 750px;
+        }
+
+        .postPage .menu1Box img {
+            width: 100px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 {
+            height: 100px;
+        }
+
+        .postPage .menu1Box {
+            height: 100px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 {
+            height: 100px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            line-height: 15px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .titleText {
+            font-size: 7px;
+        }
+
+        .postPage .menu1Box .rightBoxMenu1 .textBoxMenu1 .textBoxMenu {
+            font-size: 9px;
+        }
+
+        .postPage .viewMoreBtn {
+            width: 120px;
+            height: 40px;
+            position: relative;
+            left: 20px;
+        }
+
+        .postPage .menu2Box {
+            width: 340px;
+            height: 150px;
+        }
+
+        .postPage .menu2Box img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 {
+            height: 100px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .titleText {
+            font-size: 7px;
+        }
+
+        .postPage .menu2Box .rightBoxMenu2 .textBoxMenu1 .textBoxMenu {
+            font-size: 9px;
+        }
+    }
+}
+
+
+@mixin Footer() {
+    @media screen and (max-width:1130px) {
+        footer .footAll .footBox .aboutBox span {
+            font-size: 12px;
+        }
+
+        footer .footAll .footBox .TeamBox span {
+            font-size: 12px;
+        }
+
+        footer .footAll .footBox .ArchivesFootText span {
+            font-size: 12px;
+        }
+
+        footer .footAll .footBox .socialMediaBox .iconBoxFoot img {
+            width: 30px;
+            height: 30px;
+        }
+
+        footer .footAll .footBox .socialMediaBox {
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width:980px) {
+        footer .footAll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        footer .footAll .footBox {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        footer {
+            height: 700px;
+        }
+
+        footer .logoBox {
+            width: 200px;
+            position: relative;
+            left: 20px;
+        }
+    }
+}

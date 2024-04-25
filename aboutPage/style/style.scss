@@ -1,0 +1,507 @@
+@import "./fonts";
+@import "./mixinMedia";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+
+    header {
+        width: 100%;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F2EAEA;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+
+        .logoBox {
+            width: 80px;
+            height: 22px;
+
+            a {
+                text-decoration: none;
+                font-family: Alegreya;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 16px;
+                line-height: 21.78px;
+                color: #BC5832;
+            }
+        }
+
+        #menuIcon {
+            display: none;
+        }
+
+        .navMenu {
+            width: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            ul {
+                width: 650px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                list-style: none;
+
+                li {
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    line-height: 19.5px;
+                    color: #000000;
+                    transition: 0.3s ease;
+
+
+                    a {
+                        color: #000000;
+                        text-decoration: none;
+                    }
+
+                    .active {
+                        font-weight: 600;
+                        box-shadow: 0px 23px 10px 0px #00000040;
+                        transition: 0.3s ease;
+                    }
+
+                }
+
+                li:hover {
+                    font-weight: 600;
+                    box-shadow: 0px 23px 10px 0px #00000040;
+                    transition: 0.3s ease;
+                }
+
+
+            }
+        }
+
+        .searchBox {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            .serarchBoxInsideBox {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 5px;
+
+                #userIcon {
+                    position: relative;
+                    left: -10px;
+                }
+            }
+
+            .material-symbols-outlined {
+                cursor: pointer;
+            }
+
+            .search-container {
+                position: relative;
+                width: 200px;
+            }
+
+            #search-input {
+                width: 172px;
+                height: 24px;
+                display: none;
+                background: rgba(255, 255, 255, 1);
+                border-radius: 27px;
+                padding-left: 20px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    @include Header();
+
+    .popup {
+        width: 1207px;
+        min-height: 305px;
+        max-height: 700px;
+        display: none;
+        position: fixed;
+        top:55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(242, 234, 234, 1);
+        padding: 0px;
+        z-index: 1000;
+
+
+        span {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            color: rgba(171, 57, 33, 1);
+            font-family: Alegreya;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 55px;
+            line-height: 74.86px;
+        }
+
+        p {
+            width: 424px;
+            height: 74px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36.57px;
+            text-align: center;
+            color: rgba(0, 0, 0, 1);
+        }
+
+
+        .closeIcon {
+            position: relative;
+            left: 600px;
+            top: -650px;
+            cursor: pointer;
+        }
+
+        form {
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            left: 600px;
+            top: -500px;
+            gap: 20px;
+
+
+            input {
+                width: 518px;
+                height: 80px;
+                border-radius: 18px;
+                background: rgba(254, 251, 251, 1);
+                border: none;
+                outline: none;
+                padding-left: 200px;
+            }
+
+            ::placeholder {
+                color: rgba(242, 234, 234, 1);
+                font-weight: 600;
+                line-height: 30.48px;
+                font-size: 25px;
+                font-family: Montserrat;
+            }
+
+            button {
+                width: 518px;
+                height: 80px;
+                border-radius: 18px;
+                background: rgba(134, 115, 115, 1);
+                color: rgba(255, 255, 255, 1);
+                line-height: 30.48px;
+                font-size: 25px;
+                font-family: Montserrat;
+                font-weight: 700;
+                border: none;
+            }
+
+
+            img {
+                position: relative;
+                top: 75px;
+                left: -150px;
+            }
+        }
+    }
+
+    @include Popup();
+
+    .aboutPage {
+        width: 100%;
+        min-height: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+
+
+        .boxAboutCenter {
+            width: 1200px;
+            height: 686px;
+            background: #F2EAEA;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+            .textBox {
+                width: 582px;
+                height: 424px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+
+                .AboutSpan {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 30px;
+                    color: #000000;
+                }
+
+                p {
+                    width: 582px;
+                    height: 141px;
+                    font-family: Montserrat;
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    @include AboutPage();
+
+    footer {
+        width: 100%;
+        height: 253px;
+        border-top: 14px solid #867373;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+
+        .footAll {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .footBox {
+                width: 80%;
+                min-height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .aboutBox {
+                    width: 75px;
+                    height: 100px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .aboutFootText {
+                        font-family: Montserrat;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: #000000;
+                    }
+
+
+                    span {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: #000000;
+                    }
+                }
+
+
+                .TeamBox {
+                    width: 75px;
+                    height: 100px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+
+
+                    .TeamFootText {
+                        font-family: Montserrat;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: #000000;
+                    }
+
+
+                    span {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: #000000;
+                    }
+                }
+
+
+                .ArchivesFootText {
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+
+
+                    .ArchivesFootText {
+                        font-family: Montserrat;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: #000000;
+                    }
+
+                    .archivesUl .archivesLi {
+                        width: 100px;
+                        color: #BC5832;
+                        position: relative;
+                        left: 20px;
+                    }
+
+                    span {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19.5px;
+                        color: #000000;
+                    }
+                }
+
+                .socialMediaBox {
+                    width: 150px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    // border: 1px solid;
+
+
+                    .iconBoxFoot {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        gap: 10px;
+                    }
+                }
+
+                .newSletterBox {
+                    width: 260px;
+                    height: 69px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    // border: 1px solid;
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .subscribeBtn {
+                            width: 75px;
+                            height: 33px;
+                            background: #BC5832;
+                            border: none;
+                            color: #FFFFFF;
+                            font-family: Montserrat;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 20.51px;
+                        }
+
+                        input {
+                            width: 180px;
+                            height: 33px;
+                            background: #DEDADA;
+                            border: none;
+                            outline: none;
+                            padding-left: 20px;
+                            font-size: 12px;
+                            line-height: 20.51px;
+                            font-weight: 400;
+                            font-family: Montserrat;
+                            color: #2D2D2D;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logoBox {
+            width: 133px;
+            height: 50px;
+
+            .logoBoxTastyPost {
+                font-family: Alegreya;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 30px;
+                line-height: 40.83px;
+                color: #BC5832;
+            }
+        }
+
+        .nerqevFoot {
+            width: 100%;
+            height: 42px;
+            border: 1px solid black;
+            background: #474343;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            p {
+                font-family: Montserrat;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14.63px;
+                color: #F8F1F1;
+            }
+        }
+    }
+
+    @include Footer();
+}
